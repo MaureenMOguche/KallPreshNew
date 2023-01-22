@@ -1,0 +1,368 @@
+:root {
+  --purple: #6f62b1;
+  --light-green: #7ab37c;
+  --dark-green: #4a864c;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/*.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}*/
+
+html,
+body{
+  width: 100%;
+  min-height: 100%;
+}
+
+/*=============================
+      Sections General
+==============================*/
+section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/*=============================
+      Content Boxes
+==============================*/
+.content-box-lg{
+  padding: 120px;
+}
+/*=============================
+      Navigation
+==============================*/
+.logo{
+  height: 60px;
+}
+.my-nav{
+  background-color: rgba(0,0,0,.8);
+}
+
+
+/*=============================
+      preloader
+==============================*/
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ead7d7;
+}
+#status{
+  background-image: url("../images/preloader/preloader.gif");
+  width: 61px;
+  height: 61px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*=============================
+      Home
+==============================*/
+#home{
+  background: none;
+  height: 100vh;
+  overflow: hidden;
+}
+.home-inner{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+  /*background-image: linear-gradient(rgba(111,98,177, .8), rgba(111,98,177,.7)), url("../images/about.jpg");
+  background-size: cover;*/
+  z-index: -1;
+}
+.home-bg-img{
+  width: 100%;
+  height: 100%;
+}
+.home-bg-overlay{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(104,69,172, .6);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 5%;
+  text-align: center;
+}
+.home-text{
+  width: 100%;
+  /*background-color: rgba(0,0,0,.7); */
+}
+.home-content h1 {
+  font-size: 3.5rem;
+  letter-spacing: .2rem;
+}
+.home-content p {
+  font-size: 1.5rem;
+}
+.home-content span {
+  color: var(--dark-green);
+  text-shadow: 1px 1px 1px white;
+}
+
+
+/*=============================
+      Buttons
+==============================*/
+.btn-general {
+  padding: 12px 48px;
+  border-radius: 40px;
+  border: 1px solid white;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.btn-general:hover {
+  opacity: .8;
+}
+.btn-home {
+  background-color: var(--light-green);
+}
+
+.btn-featured{
+  background-color: var(--dark-green);
+  color: white;
+}
+
+/*=============================
+      Featured
+==============================*/
+#featured{
+  position: absolute;
+  padding: 0 120px;
+  top: -100px;
+}
+.featured-item {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+/*=============================
+      Benefits
+==============================*/
+#benefits{
+  position: relative;
+  overflow: visible;
+  padding-bottom: 300px;
+}
+.benefits-container{
+  position: relative;
+  top: 450px;
+  display: flex;
+  background-image: url("../images/featured-1.jpg");
+  background-blend-mode: lighten;
+  background-size: contain;
+}
+.benefits-container-overlay{
+  content:"";
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: rgba(0,0,0,.7);
+}
+.benefit-item{
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.benefit-left-item{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.benefit-right-item{
+  margin-top: 60px;
+}
+.benefit-white-bg{
+  background-color: white;
+}
+.benefit-green-bg{
+  background-color: var(--dark-green);
+  color: white;
+}
+
+.fa-layer-group,
+.fa-bone {
+  font-size: 3.5rem;
+  color: var(--dark-green);
+  margin-bottom: 1.3rem;
+}
+.fa-toilet-paper,
+.fa-heart-pulse {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1.3rem;
+}
+
+/*=============================
+        Ecommerce
+==============================*/
+.ecommerce-content-box{
+  padding-top: 200px;
+  text-align: center;
+}
+.ecommerce-content-box hr {
+  border: 2px solid var(--purple);
+  margin: 40px 0;
+}
+.ecommerce-item{
+  background-color: white;
+  box-shadow: 0 0 5px black;
+  position: relative;
+}
+.ecommerce-buy{
+  background-color: var(--dark-green);
+  color: white;
+  padding: 20px;
+}
+.ecommerce-price del {
+  text-decoration-style: double;
+}
+
+/*=============================
+      About Us
+==============================*/
+.divider{
+  border: 2px solid purple;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.e-divider{
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: end;
+}
+.divider-box,
+.divider-box-right{
+  padding: 0 10px;
+  height: 40px;
+  background-color: purple;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+.divider-box-right{
+  right: 0;
+}
+.f-divider{
+  position: relative;
+  top: 400px;
+}
+
+.vertical-text{
+  position: relative;
+  margin-bottom: 100px;
+}
+.vertical-text h5 {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -25px;
+  top: 50px;
+  color: purple;
+}
+.vertical-text h2 {
+  position: relative;
+  left: 60px;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+/*=============================
+      Footer
+==============================*/
+footer {
+  background-color: rgba(106, 13, 173, .8);
+  color: white;
+  padding-bottom: 20px;
+}
+footer span {
+  color: red;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.btn-footer {
+  color: white;
+}
+.btn-footer:hover{
+  color: black;
+  background-color: rgba(255,255,255, .8);
+}
+.designer{
+  font-size: smaller;
+}
+.designer a {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+/*=============================
+      Mobile
+==============================*/
+@media (max-width: 760px) {
+  .content-box-lg{
+    padding: 20px;
+  }
+  .home-bg-img{
+    height: 100vh;
+    object-fit: cover;
+  }
+  .home-text h1{
+    font-size: 2.5rem;
+  }
+  #featured{
+    position: static;
+    padding: 20px;
+  }
+  .featured-item{
+    margin-top: 20px;
+  }
+  #benefits{
+    padding-bottom: 60px;
+  }
+  .benefits-container,
+  .f-divider{
+    position: static;
+  }
+  .f-divider{
+    margin: 60px auto;
+  }
+  .vertical-text{
+    margin-top: 40px;
+  }
+}

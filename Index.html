@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="KallyPresh.styles.css" asp-append-version="true"/>
+    
+    <link rel="icon" href="images/kallyicon.png"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css"/>
+
+    <title>KallyPresh</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark my-nav">
+            <div class="container">
+                <a class="navbar-brand logo"><img src="images/kallyPreshLogo.png" alt="logo" class="logo"/></a>
+                        <button class="navbar-toggler" data-bs-target="#main-nav" data-bs-toggle="collapse"
+                                aria-controls="main-nav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#featured">Featured</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <!-- Home -->
+    <section id="home">
+        
+        <!--
+        <video id="home-video" poster="images/videos/vid-img.jpg" autoplay loop>
+            <source src="images/videos/bgvideo.mp4" type="video/mp4" />
+            <source src="images/videos/videobg.ogv" type="video/ogg" />
+            <source src="images/videos/videobg.weba" type="video/webm" />
+        </video> 
+        <div class="home-overlay"></div> -->
+        <div class="home-inner">
+            <img src="images/about.jpg" class="home-bg-img img-fluid"/>
+            <img src="images/featured-2.jpg" class="home-bg-img img-fluid"/>
+            <img src="images/strawberry.jpg" class="home-bg-img img-fluid"/>
+            <img src="images/featured-3.jpg" class="home-bg-img img-fluid"/>
+        </div>
+        <div class="home-bg-overlay"></div>
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Enjoy <span>Probiotic</span> Benefits with Greek yoghurt,<br/>Granola, and Parfait!</h1>
+                <p>Enjoy the Health Benefits of Greek yoghurt for improved health and more!</p>
+            </div>
+            <a class="btn btn-general btn-home">Learn More</a>
+        </div>
+    </section>
+    <!-- End of Home -->
+
+    <!-- Benefits -->
+    <section id="benefits">
+        <div id="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="featured-item">
+                            <h5>Love Cup Parfait</h5>
+                            <img src="images/featured-1.jpg" class="img-fluid"/>
+                            <p>Enriched to make your bones stronger</p>
+                            <a class="btn btn-general btn-featured">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="featured-item">
+                            <h5>Love Cup Parfait</h5>
+                            <img src="images/featured-2.jpg" class="img-fluid"/>
+                            <p>Enriched to make your bones stronger</p>
+                            <a class="btn btn-general btn-featured">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="featured-item">
+                            <h5>Love Cup Parfait</h5>
+                            <img src="images/featured-3.jpg" class="img-fluid"/>
+                            <p>Enriched to make your bones stronger</p>
+                            <a class="btn btn-general btn-featured">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider f-divider">
+            <div class="divider-box"><h3>Benefits</h3></div>
+        </div>
+        <div class="benefits-container">
+            <div class="content-box-lg">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="col benefit-left-item">
+                            <h2>Power Up Your Day With Greek Yoghurt & Granola:</h2>
+                            <p>Experience all the Health Benefits!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="col-lg">
+                            <div class="benefit-item benefit-white-bg">
+                                <i class="fa-solid fa-bone"></i>
+                                <h3>Improve Bone Health</h3>
+                                <p>Our probiotic yoghurt is specially formulated to help improve bone health and strength</p>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="benefit-item benefit-green-bg">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <h2>Normalize High Blood Pressure</h2>
+                                <p>Our probiotic yoghurt can help to reduce blood pressure to normal levels</p>
+                                <a class="btn">Learn More..</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 benefit-right-item">
+                        <div class="col-lg">
+                            <div class="benefit-item benefit-green-bg">
+                                <i class="fa-solid fa-toilet-paper"></i>
+                                <h3>Reduce Diarrhea Caused by Antibiotics</h3>
+                                <p>Our probiotic yoghurt helps to reduce the diarrhea caused by antibiotics.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="benefit-item benefit-white-bg">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <h2>Relieve IBS Symptoms</h2>
+                                <p>Our probiotic yoghurt helps to relieve the symptoms of irritable bowel syndrome</p>
+                                <a class="btn">Learn More..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-container-overlay"></div>
+        </div>
+    </section>
+    <!-- End of Benefits -->
+
+    <!-- Ecommerce -->
+    <section id="ecommerce">
+
+        <div class="container">
+            <div class="content-box-lg ecommerce-content-box">
+                <h2>Premium Enjoyment with Health Benefits, Order Now!</h2>
+                <br/>
+                <div class="divider e-divider">
+                    <div class="divider-box-right"><h3>Products</h3></div>
+                </div>
+                
+                <div class="row gy-5">
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/greek.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Greek Yoghurt - 1L</h3>
+                                <h3><del>N</del>4,000</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/lovecup.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Love Cup Parfait</h3>
+                                <h3><del>N</del>2,500</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/greek2k.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Greek Yoghurt - 500ml</h3>
+                                <h3><del>N</del>2,000</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/greek2k.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Greek Yoghurt - 500ml</h3>
+                                <h3><del>N</del>2,000</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/greek2k.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Greek Yoghurt - 500ml</h3>
+                                <h3><del>N</del>2,000</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ecommerce-item">
+                            <img src="images/fromKally/greek2k.jpeg" class="img-fluid"/>
+                            <div class="ecommerce-buy">
+                                <h3>Greek Yoghurt - 500ml</h3>
+                                <h3><del>N</del>2,000</h3>
+                                <a class="btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <!-- End of Ecommerce -->
+
+    <!-- About -->
+    <section id="about">
+        <div class="divider">
+            <div class="divider-box"><h3>About Us</h3></div>
+        </div>
+        <div class="container">
+            <div class="content-box-lg">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="vertical-text">
+                            <h5>WHO WE ARE</h5>
+                            <h2>A <strong>Story</strong><br/>About Us</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <p>A team of health and diet enthusiast, we sell probiotic yoghurts that guarantee health benefits.
+                            We welcome you to sit back and unwind while we serve you our parfaits and yoghurts
+                            that would give you premium enjoyment! </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/about.jpg" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="content-box-lg">
+                <div class="row">
+                    <div class="col-lg">
+                        <h2>Special Order? Questions?</h2>
+                        <p>Drop us a message</p>
+                        <hr/>
+                        <h2>Our Contact</h2>
+                        <p><i class="fa-solid fa-phone"></i> +234-8025427420, +234-8020566059</p>
+                        <p><i class="fa-solid fa-envelope"></i> kallypresh.probio@gmail.com</p>
+                        <p><i class="fa-brands fa-facebook-f"></i> KallyPresh Probio</p>
+                        <p><i class="fa-brands fa-instagram"></i> @@KallyPresh-probio</p>
+                    </div>
+                    <div class="col-lg">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Name<span>*</span></label>
+                                <input class="form-control" type="text" name="name" placeholder="Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email<span>*</span></label>
+                                <input class="form-control" type="email" name="email" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message<span>*</span></label>
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                            <button class="btn btn-general btn-footer" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright-content text-center">
+                <p>Copyright &copy; KallyPresh @DateTime.Now.Year </p>
+                <p class="designer">Designed by <a href="https://wa.me/2348030411314" target="_blank">Maureen Oguche</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>
