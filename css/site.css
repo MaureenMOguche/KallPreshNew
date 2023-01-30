@@ -154,7 +154,11 @@ section{
   background-color: var(--dark-green);
   color: white;
 }
-
+.btn-ecommerce{
+  background-color: var(--dark-green);
+  color: white;
+  width: 60%;
+}
 /*=============================
       Featured
 ==============================*/
@@ -240,16 +244,63 @@ section{
 .ecommerce-item{
   background-color: white;
   box-shadow: 0 0 5px black;
-  position: relative;
+  height: 450px;
+  max-height: 450px;
 }
-.ecommerce-buy{
-  background-color: var(--dark-green);
-  color: white;
-  padding: 20px;
+.ecommerce-item-image{
+  max-height: 60%;
+  height: 60%;
 }
-.ecommerce-price del {
+.ecommerce-img{
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+.ecommerce-item-content{
+  max-height: 40%;
+  height: 40%;
+  background-color: rgba(230, 228, 228, 0.418);
+  padding: 30px;
+}
+.ecomm-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating{
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 2px solid var(--purple);
+  font-size: .7rem;
+}
+.ecomm-title i{
+  margin-right: 5px;
+  color: purple;
+}
+del {
   text-decoration-style: double;
 }
+.ecomm-price,
+.ecomm-buttons{
+  display: flex;
+}
+
+.ecomm-price p span {
+  color: purple;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.ecomm-buttons{
+  justify-content: center;
+}
+.ecomm-buttons i {
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  padding: 0 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
 
 /*=============================
       About Us
@@ -301,6 +352,7 @@ section{
   font-weight: 300;
   letter-spacing: .2rem;
 }
+
 
 /*=============================
       Footer
